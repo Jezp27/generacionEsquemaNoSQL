@@ -20,6 +20,7 @@ public class Regla1 extends javax.swing.JFrame {
      */
     public Regla1() {
         initComponents();
+        this.setLocationRelativeTo(null);
         this.q1Result.setVisible(false);
     }
 
@@ -106,6 +107,8 @@ public class Regla1 extends javax.swing.JFrame {
             }
         });
 
+        q1Result.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        q1Result.setForeground(new java.awt.Color(0, 153, 153));
         q1Result.setText("Q':");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -113,32 +116,14 @@ public class Regla1 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(129, 129, 129)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel9)
+                .addGap(198, 198, 198))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(64, 64, 64)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(63, 63, 63)
-                                        .addComponent(jLabel4)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabel5)
-                                        .addGap(82, 82, 82))))
-                            .addComponent(jLabel7)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(63, 63, 63)
-                                .addComponent(jLabel6))
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addContainerGap(114, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -154,21 +139,38 @@ public class Regla1 extends javax.swing.JFrame {
                                 .addGap(148, 148, 148))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel3)
-                                .addGap(200, 200, 200))))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(129, 129, 129)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel9)
-                .addGap(198, 198, 198))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGap(200, 200, 200))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(369, 369, 369)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(388, 388, 388)
-                        .addComponent(q1Result)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(63, 63, 63)
+                                            .addComponent(jLabel4)))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                            .addComponent(jLabel5)
+                                            .addGap(82, 82, 82))))
+                                .addComponent(jLabel7)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(63, 63, 63)
+                                    .addComponent(jLabel6))
+                                .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(q1Result)))
+                        .addContainerGap(114, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(384, 384, 384)
+                .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -181,7 +183,7 @@ public class Regla1 extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(nombreTabla1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nombreTabla2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
@@ -204,11 +206,11 @@ public class Regla1 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
                     .addComponent(jScrollPane4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(28, 28, 28)
+                .addGap(33, 33, 33)
                 .addComponent(q1Result)
-                .addGap(27, 27, 27))
+                .addGap(206, 206, 206))
         );
 
         pack();
@@ -218,20 +220,22 @@ public class Regla1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_nombreTabla2ActionPerformed
 
+    //Obtiene el resultado de la union de dos conjuntos
     private ArrayList<String> union(ArrayList<String> conjunto1, ArrayList<String> conjunto2) {
         ArrayList<String> Q = new ArrayList<>();
-
         Q.addAll(conjunto1);
 
         for (String conjunto2i : conjunto2) {
             if (!Q.contains(conjunto2i)) {
                 Q.add(conjunto2i);
+                //System.out.println(conjunto2i);
             }
         }
         //System.out.println(Q.size());
         return Q;
     }
 
+    //Obtiene el conjunto interseccion de dos conjuntos
     private ArrayList<String> interseccion(String[] conjunto1, ArrayList<String> conjunto2) {
         ArrayList<String> conjuntoI = new ArrayList<>();
 
@@ -240,11 +244,11 @@ public class Regla1 extends javax.swing.JFrame {
                 conjuntoI.add(conjunto1[j]);
             }
         }
-
         //System.out.println(conjuntoI.size());
         return conjuntoI;
     }
 
+    //Determinar si dos conjuntos son iguales (Mismos elementos, en el mismo orden)
     private boolean elementosIguales(String[] conjunto1, ArrayList<String> conjunto2) {
         ArrayList<String> castConjunto1 = new ArrayList<>();
         castConjunto1.addAll(Arrays.asList(conjunto1));
@@ -255,6 +259,7 @@ public class Regla1 extends javax.swing.JFrame {
         return castConjunto1.equals(conjunto2);
     }
 
+    //Devuelve el conjunto resultado de la diferencia entre  dos conjuntos
     private ArrayList<String> diferenciaConjuntos(String[] conjuntoS1, ArrayList<String> conjuntoT2S2) {
         ArrayList<String> conjuntoS1_T2S2 = new ArrayList<>();
         ArrayList<String> atributosS1i = new ArrayList<>();
@@ -272,25 +277,32 @@ public class Regla1 extends javax.swing.JFrame {
             }
         }
 
-        // ArrayList<String> distinctS1_T2S2 = new ArrayList<>();
-        //distinctS1_T2S2 = conjuntoS1_T2S2.stream().distinct().collect(Collectors.toList()); 
-        //System.out.println(conjuntoI.size());
-        return conjuntoS1_T2S2;
-    }
-    
-    private ArrayList<String> obtenerTDoblePrima(String[] conjuntoS1, ArrayList<String> conjuntoT2S2){
-        ArrayList<String> tDoblePrima = new ArrayList<>();
+        //Guardar solo los atributos unicos obtenidos de la diferencia
+        ArrayList<String> unicosConjuntoS1_T2S2 = new ArrayList<>();
         
+        for(String sti: conjuntoS1_T2S2){
+            if (!unicosConjuntoS1_T2S2.contains(sti)){
+                unicosConjuntoS1_T2S2.add(sti);
+            }
+        }
+
+        return unicosConjuntoS1_T2S2;
+    }
+
+    private ArrayList<String> obtenerTDoblePrima(String[] conjuntoS1, ArrayList<String> conjuntoT2S2) {
+        ArrayList<String> tDoblePrima = new ArrayList<>();
+
         for (String conjuntoS1i : conjuntoS1) {
             String[] s1Atributos = conjuntoS1i.split("\\s*,\\s*");
-            if (this.interseccion(s1Atributos, conjuntoT2S2).isEmpty()){
+            if (this.interseccion(s1Atributos, conjuntoT2S2).isEmpty()) {
                 tDoblePrima.addAll(Arrays.asList(s1Atributos));
-            }            
-        }        
+            }
+        }
         return tDoblePrima;
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.q1Result.setText("");
         //String[] T1 = atributosTabla1.getText().split("\\s*,\\s*");
         String[] T2 = atributosTabla2.getText().split("\\s*,\\s*");
 
@@ -306,24 +318,37 @@ public class Regla1 extends javax.swing.JFrame {
             for (String S2i : s2Atributos) {
                 if (conjuntoT2.contains(S2i) && !conjuntoT2S2.contains(S2i)) {
                     conjuntoT2S2.add(S2i);
+                    //System.out.println(S2i);
                 }
             }
         }
 
         ArrayList<String> s1SinT2S2 = this.diferenciaConjuntos(conjuntoS1, conjuntoT2S2);
         ArrayList<String> tPrima2 = this.union(conjuntoT2S2, s1SinT2S2);
-        ArrayList<String> docEmbebido = this.union(tPrima2, this.obtenerTDoblePrima(conjuntoS1, conjuntoT2S2));
+        ArrayList<String> tDoblePrima = this.obtenerTDoblePrima(conjuntoS1, conjuntoT2S2);
 
-        String qPrima = "Q'={" + atributosTabla1.getText() + ", " 
-                        + this.nombreTabla1.getText() + "_of_" 
-                        + this.nombreTabla2.getText() + ":{";
-        
-        for(int i=0; i< docEmbebido.size(); i++){
-            qPrima = qPrima + docEmbebido.get(i) + ",";
+
+        String qPrima = "Q'={" + atributosTabla1.getText() + ", "
+                + this.nombreTabla2.getText() + "_of_"
+                + this.nombreTabla1.getText() + ":{";
+
+        for (int i = 0; i < tPrima2.size(); i++) {
+            qPrima = qPrima + tPrima2.get(i) + ",";
         }
+
+        qPrima = qPrima.substring(0, qPrima.length() - 1) + "}";
         
-        qPrima = qPrima.substring(0, qPrima.length() -1) + "}}";
-        
+        if (tDoblePrima.isEmpty()){
+            qPrima = qPrima + "}";
+        }else{
+            qPrima = qPrima + ", T''2:{";
+            for (String tPi: tDoblePrima){
+                qPrima = qPrima + tPi + ",";
+            }
+            qPrima = qPrima.substring(0, qPrima.length() - 1) + "}}";
+        }
+
+
         this.q1Result.setVisible(true);
         this.q1Result.setText(qPrima);
 
