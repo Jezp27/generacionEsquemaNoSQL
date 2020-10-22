@@ -13,12 +13,12 @@ import java.util.Collections;
  *
  * @author user
  */
-public class Regla4 extends javax.swing.JFrame {
+public class Regla5 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Regla4
+     * Creates new form Regla5
      */
-    public Regla4() {
+    public Regla5() {
         initComponents();
         this.setLocationRelativeTo(null);
         this.q1Result.setVisible(false);
@@ -33,14 +33,15 @@ public class Regla4 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        q1Result = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        atributosTabla1 = new javax.swing.JTextArea();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        s1T2Queries = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        nombreTabla3 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        atributosTabla2 = new javax.swing.JTextArea();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        s3Queries = new javax.swing.JTextArea();
+        jLabel12 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         s1T3Queries = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
@@ -51,68 +52,20 @@ public class Regla4 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        atributosTabla3 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        nombreTabla3 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        atributosTabla2 = new javax.swing.JTextArea();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        s3Queries = new javax.swing.JTextArea();
-        jLabel12 = new javax.swing.JLabel();
+        q1Result = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        atributosTabla1 = new javax.swing.JTextArea();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        s1T2Queries = new javax.swing.JTextArea();
         volver = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        atributosTabla3 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        q1Result.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        q1Result.setForeground(new java.awt.Color(0, 153, 153));
-        q1Result.setText("Q':");
-
-        atributosTabla1.setColumns(20);
-        atributosTabla1.setRows(5);
-        jScrollPane2.setViewportView(atributosTabla1);
-
-        jLabel7.setForeground(new java.awt.Color(255, 102, 0));
-        jLabel7.setText("Ingrese en el campo correpondiente los atributos de cada query separándolos por coma. ");
-
-        jLabel8.setText("Atributos de S1 para T2:");
-
-        jLabel9.setText("Atributos de S1 para T3:");
-
-        s1T2Queries.setColumns(20);
-        s1T2Queries.setRows(5);
-        jScrollPane3.setViewportView(s1T2Queries);
-
-        s1T3Queries.setColumns(20);
-        s1T3Queries.setRows(5);
-        jScrollPane4.setViewportView(s1T3Queries);
-
-        jLabel1.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel1.setText("Creating Collections with Embedded Documents for Document Databases Taking into Account the Queries - Rule 4");
-
-        jLabel2.setText("Nombre Tabla 1:");
-
-        jLabel3.setText("Nombre Tabla 2:");
-
-        nombreTabla2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nombreTabla2ActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Atributos Tabla 1:");
-
-        jLabel5.setText("Atributos Tabla 3:");
-
-        jLabel6.setForeground(new java.awt.Color(255, 102, 0));
-        jLabel6.setText("Ingrese los atributos de las tres tablas separándolos por comas, por favor no incluya caracteres especiales");
-
-        atributosTabla3.setColumns(20);
-        atributosTabla3.setRows(5);
-        jScrollPane1.setViewportView(atributosTabla3);
 
         jButton1.setText("Obtener Q'");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -135,6 +88,49 @@ public class Regla4 extends javax.swing.JFrame {
 
         jLabel12.setText("Atributos S3:");
 
+        s1T3Queries.setColumns(20);
+        s1T3Queries.setRows(5);
+        jScrollPane4.setViewportView(s1T3Queries);
+
+        jLabel1.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel1.setText("Creating Collections with Embedded Documents for Document Databases Taking into Account the Queries - Rule 5");
+
+        jLabel2.setText("Nombre Tabla 1:");
+
+        jLabel3.setText("Nombre Tabla 2:");
+
+        nombreTabla2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nombreTabla2ActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Atributos Tabla 1:");
+
+        jLabel5.setText("Atributos Tabla 3:");
+
+        jLabel6.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel6.setText("Ingrese los atributos de las tres tablas separándolos por comas, por favor no incluya caracteres especiales");
+
+        q1Result.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        q1Result.setForeground(new java.awt.Color(0, 153, 153));
+        q1Result.setText("Q':");
+
+        atributosTabla1.setColumns(20);
+        atributosTabla1.setRows(5);
+        jScrollPane2.setViewportView(atributosTabla1);
+
+        jLabel7.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel7.setText("Ingrese en el campo correpondiente los atributos de cada consulta separándolos por coma. ");
+
+        jLabel8.setText("Atributos de S1 para T2:");
+
+        jLabel9.setText("Atributos de S1 para T3:");
+
+        s1T2Queries.setColumns(20);
+        s1T2Queries.setRows(5);
+        jScrollPane3.setViewportView(s1T2Queries);
+
         volver.setText("Volver al Menú Principal");
         volver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,7 +139,11 @@ public class Regla4 extends javax.swing.JFrame {
         });
 
         jLabel13.setForeground(new java.awt.Color(255, 102, 0));
-        jLabel13.setText("Presione enter después de ingresar todos los atributos de un query y proceda con el siguiente");
+        jLabel13.setText("Presione enter después de ingresar todos los atributos de una consulta y proceda con la siguiente");
+
+        atributosTabla3.setColumns(20);
+        atributosTabla3.setRows(5);
+        jScrollPane1.setViewportView(atributosTabla3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -168,60 +168,59 @@ public class Regla4 extends javax.swing.JFrame {
                     .addComponent(jLabel3))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 39, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addGap(130, 130, 130))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(nombreTabla3, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(83, 83, 83))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(61, 61, 61))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(122, 122, 122))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addGap(133, 133, 133))))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(q1Result))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(313, 313, 313)
-                        .addComponent(jButton1)
-                        .addGap(92, 92, 92)
-                        .addComponent(volver)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(71, 71, 71)
+                                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(76, 76, 76)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(131, 131, 131)
+                                .addComponent(jLabel5)))
+                        .addGap(0, 44, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(158, 158, 158)
+                                .addComponent(jLabel12))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(87, 87, 87)
+                                .addComponent(nombreTabla3, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(114, 114, 114)
+                                .addComponent(jLabel10)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(121, 121, 121)
                         .addComponent(jLabel6))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(185, 185, 185)
                         .addComponent(jLabel7))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(171, 171, 171)
-                        .addComponent(jLabel13)))
+                        .addComponent(jLabel13))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(97, 97, 97)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(313, 313, 313)
+                        .addComponent(jButton1)
+                        .addGap(92, 92, 92)
+                        .addComponent(volver))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(q1Result)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(15, 15, 15)
                 .addComponent(jLabel1)
-                .addGap(36, 36, 36)
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
@@ -247,39 +246,34 @@ public class Regla4 extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel13)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addGap(12, 12, 12)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(85, 85, 85))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(volver))
-                        .addGap(29, 29, 29)))
+                                .addComponent(jLabel9)
+                                .addGap(12, 12, 12))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addGap(18, 18, 18)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(volver))
+                .addGap(18, 18, 18)
                 .addComponent(q1Result)
-                .addContainerGap(206, Short.MAX_VALUE))
+                .addContainerGap(198, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void nombreTabla2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreTabla2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nombreTabla2ActionPerformed
 
     //Obtiene el resultado de la union de dos conjuntos
     private ArrayList<String> union(ArrayList<String> conjunto1, ArrayList<String> conjunto2) {
@@ -322,7 +316,7 @@ public class Regla4 extends javax.swing.JFrame {
 
     //Devuelve el conjunto resultado de la diferencia entre  dos conjuntos
     private ArrayList<String> diferenciaConjuntos(String[] conjuntoS1, ArrayList<String> conjuntoTnS3) {
-        ArrayList<String> conjuntoS1_T2S2 = new ArrayList<>();
+        ArrayList<String> conjuntoS1_TnS3 = new ArrayList<>();
         ArrayList<String> atributosS1i = new ArrayList<>();
 
         for (String conjuntoS1i : conjuntoS1) {
@@ -334,14 +328,14 @@ public class Regla4 extends javax.swing.JFrame {
             }
 
             if (!atributosS1i.isEmpty() && !elementosIguales(s1Atributos, atributosS1i)) {
-                conjuntoS1_T2S2.addAll(atributosS1i);
+                conjuntoS1_TnS3.addAll(atributosS1i);
             }
         }
 
         //Guardar solo los atributos unicos obtenidos de la diferencia
         ArrayList<String> unicosConjuntoS1_T2S2 = new ArrayList<>();
 
-        for (String sti : conjuntoS1_T2S2) {
+        for (String sti : conjuntoS1_TnS3) {
             if (!unicosConjuntoS1_T2S2.contains(sti)) {
                 unicosConjuntoS1_T2S2.add(sti);
             }
@@ -350,7 +344,21 @@ public class Regla4 extends javax.swing.JFrame {
         return unicosConjuntoS1_T2S2;
     }
 
-    private ArrayList<String> obtenerTDoblePrima(String[] conjuntoS1, ArrayList<String> conjuntoTnS3) {
+    private String obtenerTDoblePrima(String[] tableN, String[] conjuntoS1, int n) {
+        String[] conjuntoS3 = s3Queries.getText().split("(\n|\r)");
+        ArrayList<String> conjuntoTnS3 = new ArrayList<>();
+        ArrayList<String> conjuntoTN = new ArrayList<>();
+        conjuntoTN.addAll(Arrays.asList(tableN));
+
+        for (String conjuntoS3i : conjuntoS3) {
+            String[] s3Atributos = conjuntoS3i.split("\\s*,\\s*");
+            for (String S3i : s3Atributos) {
+                //Agrega elemento al conjunto TnS3 si está en S3 y pertenece a TN
+                if (conjuntoTN.contains(S3i) && !conjuntoTnS3.contains(S3i)) {
+                    conjuntoTnS3.add(S3i);
+                }
+            }
+        }
         ArrayList<String> tDoblePrima = new ArrayList<>();
 
         for (String conjuntoS1i : conjuntoS1) {
@@ -359,10 +367,21 @@ public class Regla4 extends javax.swing.JFrame {
                 tDoblePrima.addAll(Arrays.asList(s1Atributos));
             }
         }
-        return tDoblePrima;
+
+        String qPrima = "";
+
+        if (!tDoblePrima.isEmpty()) {
+            qPrima = qPrima + "T''" + n + ":{";
+            for (String tPi : tDoblePrima) {
+                qPrima = qPrima + tPi + ",";
+            }
+            qPrima = qPrima.substring(0, qPrima.length() - 1) + "}";
+        }
+
+        return qPrima;
     }
 
-    private String obtenerTPrimas(String[] tableN, String tableName, String[] conjuntoS1, int n) {
+    private String obtenerTPrima(String[] tableN, String tableName, String[] conjuntoS1) {
         String[] conjuntoS3 = s3Queries.getText().split("(\n|\r)");
         ArrayList<String> conjuntoTnS3 = new ArrayList<>();
         ArrayList<String> conjuntoTN = new ArrayList<>();
@@ -379,7 +398,7 @@ public class Regla4 extends javax.swing.JFrame {
         }
         ArrayList<String> s1SinTnS3 = this.diferenciaConjuntos(conjuntoS1, conjuntoTnS3);
         ArrayList<String> tPrimaN = this.union(conjuntoTnS3, s1SinTnS3);
-        ArrayList<String> tDoblePrima = this.obtenerTDoblePrima(conjuntoS1, conjuntoTnS3);
+        //ArrayList<String> tDoblePrima = this.obtenerTDoblePrima(conjuntoS1, conjuntoTnS3);
 
         String qPrima = "";
 
@@ -389,20 +408,12 @@ public class Regla4 extends javax.swing.JFrame {
             for (int i = 0; i < tPrimaN.size(); i++) {
                 qPrima = qPrima + tPrimaN.get(i) + ",";
             }
-
-            qPrima = qPrima.substring(0, qPrima.length() - 1) + "}";
-        }
-
-        if (!tDoblePrima.isEmpty()) {
-            qPrima = qPrima + ", T''" + n + ":{";
-            for (String tPi : tDoblePrima) {
-                qPrima = qPrima + tPi + ",";
-            }
-            qPrima = qPrima.substring(0, qPrima.length() - 1) + "}";
+            qPrima = qPrima.substring(0, qPrima.length() - 1) ;
         }
 
         return qPrima;
     }
+
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.q1Result.setText("");
@@ -413,8 +424,11 @@ public class Regla4 extends javax.swing.JFrame {
         String[] conjuntoS1T2 = s1T2Queries.getText().split("(\n|\r)");
         String[] conjuntoS1T3 = s1T3Queries.getText().split("(\n|\r)");
 
-        String tPrima2 = this.obtenerTPrimas(T2, this.nombreTabla2.getText(), conjuntoS1T2, 2);
-        String tPrima3 = this.obtenerTPrimas(T3, this.nombreTabla3.getText(), conjuntoS1T3, 3);
+        String tPrima2 = this.obtenerTPrima(T2, this.nombreTabla2.getText(), conjuntoS1T2);
+        String tPrima3 = this.obtenerTPrima(T3, this.nombreTabla3.getText(), conjuntoS1T3);
+
+        String tDoblePrima2 = this.obtenerTDoblePrima(T2, conjuntoS1T2, 2);
+        String tDoblePrima3 = this.obtenerTDoblePrima(T3, conjuntoS1T3, 3);
 
         String qPrima = "Q'={" + atributosTabla1.getText();
 
@@ -423,14 +437,30 @@ public class Regla4 extends javax.swing.JFrame {
         }
 
         if (!tPrima3.equals("")) {
-            qPrima = qPrima + ", " + tPrima3;
+            qPrima = qPrima + ", " + tPrima3 + "}";
+        }else{
+            
         }
 
         qPrima = qPrima + "}";
+        
+        if (!tDoblePrima2.equals("")) {
+            qPrima = qPrima + ", " + tDoblePrima2;
+        }
 
+        if (!tDoblePrima3.equals("")) {
+            qPrima = qPrima + ", " + tDoblePrima3 + "}";
+        }
+        
+        qPrima = qPrima + "}";
+        
         this.q1Result.setVisible(true);
         this.q1Result.setText(qPrima);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void nombreTabla2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreTabla2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nombreTabla2ActionPerformed
 
     private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
         MenuPrincipal menu = new MenuPrincipal();
@@ -455,20 +485,20 @@ public class Regla4 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Regla4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Regla5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Regla4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Regla5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Regla4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Regla5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Regla4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Regla5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Regla4().setVisible(true);
+                new Regla5().setVisible(true);
             }
         });
     }

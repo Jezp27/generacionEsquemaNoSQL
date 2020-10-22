@@ -1,7 +1,6 @@
 package solucion;
 
-import Formularios.Regla1;
-import Formularios.Regla4;
+import Formularios.MenuPrincipal;
 
 /**
  *
@@ -13,7 +12,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Regla4 vista1 = new Regla4();
+        MenuPrincipal vista1 = new MenuPrincipal();
         vista1.setVisible(true);
     } 
 }

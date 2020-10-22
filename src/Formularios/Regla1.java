@@ -54,6 +54,7 @@ public class Regla1 extends javax.swing.JFrame {
         s2Queries = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         q1Result = new javax.swing.JLabel();
+        volver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -110,6 +111,13 @@ public class Regla1 extends javax.swing.JFrame {
         q1Result.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         q1Result.setForeground(new java.awt.Color(0, 153, 153));
         q1Result.setText("Q':");
+
+        volver.setText("Volver al Menú Principal");
+        volver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                volverActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -169,8 +177,10 @@ public class Regla1 extends javax.swing.JFrame {
                                 .addComponent(q1Result)))
                         .addContainerGap(114, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(384, 384, 384)
+                .addGap(295, 295, 295)
                 .addComponent(jButton1)
+                .addGap(91, 91, 91)
+                .addComponent(volver)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -207,7 +217,9 @@ public class Regla1 extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
                     .addComponent(jScrollPane4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(volver))
                 .addGap(33, 33, 33)
                 .addComponent(q1Result)
                 .addGap(206, 206, 206))
@@ -356,6 +368,12 @@ public class Regla1 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
+        MenuPrincipal menu = new MenuPrincipal();
+        menu.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_volverActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -413,5 +431,6 @@ public class Regla1 extends javax.swing.JFrame {
     private javax.swing.JLabel q1Result;
     private javax.swing.JTextArea s1Queries;
     private javax.swing.JTextArea s2Queries;
+    private javax.swing.JButton volver;
     // End of variables declaration//GEN-END:variables
 }

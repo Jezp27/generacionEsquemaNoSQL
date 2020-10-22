@@ -98,8 +98,10 @@
               </Group>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="384" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="295" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+              <Component id="volver" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -144,7 +146,10 @@
                   <Component id="jScrollPane4" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="48" max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="volver" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Component id="q1Result" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="206" max="-2" attributes="0"/>
@@ -292,6 +297,14 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Q&apos;:"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="volver">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Volver al Men&#xfa; Principal"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="volverActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
