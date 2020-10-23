@@ -159,7 +159,7 @@ public class OracleMongo {
         condExist = new BasicDBObject("total_ventas_sucursal", condBool);
         ordenDesc = new BasicDBObject("total_ventas_sucursal", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-        resultado += "TotV_sucursal\tcodigo_sucursal\tnombre_sucursal\n";
+        resultado += "TotalVentasPorSucursal\tCodigoSucursal\tNombreSucursal\n";
             //System.out.println("TotV_sucursal\tcodigo_sucursal\tnombre_sucursal");
         while (cursor.hasNext()) {
             document = cursor.next();
@@ -170,7 +170,8 @@ public class OracleMongo {
         condExist = new BasicDBObject("total_ventas_ciudad", condBool);
         ordenDesc = new BasicDBObject("total_ventas_ciudad", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-            resultado += "TotV_ciudad\tcodigo_ciudad\tnombre_ciudad" +"\n";
+        resultado += "----------------------------------------------------------------------------------------------------------\n";    
+        resultado += "TotalVentasPorCiudad\tCodigoCiudad\t\tNombreCiudad" +"\n";
             //System.out.println("TotV_ciudad\tcodigo_ciudad\tnombre_ciudad");
         while (cursor.hasNext()) {
             document = cursor.next();
@@ -181,7 +182,8 @@ public class OracleMongo {
         condExist = new BasicDBObject("total_ventas_dpto", condBool);
         ordenDesc = new BasicDBObject("total_ventas_dpto", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-        resultado += "TotV_dpto\tcodigo_dpto\tnombre_dpto" +"\n";
+        resultado += "----------------------------------------------------------------------------------------------------------\n";
+        resultado += "TotalVentasPorDpto\tCodigoDpto\t\tNombreDpto" +"\n";
             //System.out.println("TotV_dpto\tcodigo_dpto\tnombre_dpto");
         while (cursor.hasNext()) {
             document = cursor.next();
@@ -192,7 +194,8 @@ public class OracleMongo {
         condExist = new BasicDBObject("total_ventas_pais", condBool);
         ordenDesc = new BasicDBObject("total_ventas_pais", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-        resultado += "TotV_pais\tnombre_pais" +"\n";
+        resultado += "----------------------------------------------------------------------------------------------------------\n";
+        resultado += "TotalVentasPorPais\tNombrePais" +"\n";
         //System.out.println("TotV_pais\tnombre_pais");
         while (cursor.hasNext()) {
             document = cursor.next();
@@ -203,7 +206,8 @@ public class OracleMongo {
         condExist = new BasicDBObject("total_ventas_vendedor", condBool);
         ordenDesc = new BasicDBObject("total_ventas_vendedor", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-        resultado += "TotV_vendedor\tcodigo_vendedor\tnombre_vendedor" +"\n";
+        resultado += "----------------------------------------------------------------------------------------------------------\n";
+        resultado += "TotalVentasPorVendedor\tCodigoVendedor\tNombreVendedor" +"\n";
             //System.out.println("TotV_vended\tcodigo_vendedor\tnombre_vendedor");
         while (cursor.hasNext()) {
             document = cursor.next();
@@ -214,34 +218,37 @@ public class OracleMongo {
         condExist = new BasicDBObject("total_ventas_gremio", condBool);
         ordenDesc = new BasicDBObject("total_ventas_gremio", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-        resultado += "TotV_gremio\tcodigo_gremio\tnombre_gremio" +"\n";
+        resultado += "----------------------------------------------------------------------------------------------------------\n";
+        resultado += "TotalVentasPorGremio\tCodigoGremio\t\tNombreGremio" +"\n";
             //System.out.println("TotV_gremio\tcodigo_gremio\tnombre_gremio");
         while (cursor.hasNext()) {
             document = cursor.next();
             resultado += document.get("total_ventas_gremio") + "\t\t" + document.get("codigo_gremio") + "\t\t" + document.get("nombre_gremio") +"\n";
-            //System.out.println(document.get("total_ventas_gremio") + "\t\t" + document.get("codigo_gremio") + "\t\t" + document.get("nombre_gremio"));
+            //System.out.println(document.get("total_ventas_gremio") + "\t\t" + document.get("codigo_gremio") + "\t" + document.get("nombre_gremio"));
         }
         //7. Los 3 productos (codbarras y nombre) con mayor total de ventas (se debe mostrar el total de ventas de cada uno de ellos).
         condExist = new BasicDBObject("total_ventas_producto", condBool);
         ordenDesc = new BasicDBObject("total_ventas_producto", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-        resultado += "TotV_producto\tcod_barras\tnombre_producto"  +"\n";
+        resultado += "----------------------------------------------------------------------------------------------------------\n";
+        resultado += "TotalVentasPorProducto\tCodBarras\t\tNombreProducto"  +"\n";
             //System.out.println("TotV_producto\tcod_barras\tnombre_producto");
         while (cursor.hasNext()) {
             document = cursor.next();
             resultado += document.get("total_ventas_producto") + "\t\t" + document.get("cod_barras") + "\t\t" + document.get("nombre_producto")  +"\n";
-                //System.out.println(document.get("total_ventas_producto") + "\t\t" + document.get("cod_barras") + "\t\t" + document.get("nombre_producto"));
+                //System.out.println(document.get("total_ventas_producto") + "\t\t" + document.get("cod_barras") + "\t" + document.get("nombre_producto"));
         }
         //8. Las 3 marcas (nombre y descripción) con mayor total de ventas (se debe mostrar el total de ventas de cada una de ellas).
         condExist = new BasicDBObject("total_ventas_marca", condBool);
         ordenDesc = new BasicDBObject("total_ventas_marca", -1);
         cursor = collection.find(condExist).sort(ordenDesc).limit(3);
-        resultado += "TotV_Marca\tnombre_marca\tdescripcion"  +"\n";
+        resultado += "----------------------------------------------------------------------------------------------------------\n";
+        resultado += "TotalVentasPorMarca\tNombreMarca\t\tDescripcion"  +"\n";
             //System.out.println("TotV_Marca\tnombre_marca\tdescripcion");
         while (cursor.hasNext()) {
             document = cursor.next();
             resultado += document.get("total_ventas_marca") + "\t\t" + document.get("nombre_marca") + "\t\t" + document.get("descripcion") +"\n";
-            //System.out.println(document.get("total_ventas_marca") + "\t\t" + document.get("nombre_marca") + "\t\t" + document.get("descripcion"));
+            //System.out.println(document.get("total_ventas_marca") + "\t\t" + document.get("nombre_marca") + "\t" + document.get("descripcion"));
         }
         
         return resultado;
