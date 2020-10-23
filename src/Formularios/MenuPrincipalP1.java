@@ -33,6 +33,7 @@ public class MenuPrincipalP1 extends javax.swing.JFrame {
         Regla1 = new javax.swing.JButton();
         Regla4 = new javax.swing.JButton();
         Regla5 = new javax.swing.JButton();
+        volver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,6 +64,13 @@ public class MenuPrincipalP1 extends javax.swing.JFrame {
             }
         });
 
+        volver.setText("Volver ");
+        volver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                volverActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -72,17 +80,22 @@ public class MenuPrincipalP1 extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(29, 29, 29))
             .addGroup(layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(Regla1)
-                .addGap(139, 139, 139)
-                .addComponent(Regla4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Regla5)
-                .addGap(105, 105, 105))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(215, 215, 215)
                 .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(Regla1)
+                .addGap(139, 139, 139)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(volver)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Regla4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Regla5)
+                        .addGap(105, 105, 105))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,7 +109,9 @@ public class MenuPrincipalP1 extends javax.swing.JFrame {
                     .addComponent(Regla1)
                     .addComponent(Regla4)
                     .addComponent(Regla5))
-                .addGap(100, 100, 100))
+                .addGap(45, 45, 45)
+                .addComponent(volver)
+                .addGap(26, 26, 26))
         );
 
         pack();
@@ -119,6 +134,12 @@ public class MenuPrincipalP1 extends javax.swing.JFrame {
         vista.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_Regla5ActionPerformed
+
+    private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
+        MenuPrincipal menup = new MenuPrincipal();
+        this.setVisible(false);
+        menup.setVisible(true);
+    }//GEN-LAST:event_volverActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,5 +183,6 @@ public class MenuPrincipalP1 extends javax.swing.JFrame {
     private javax.swing.JButton Regla5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton volver;
     // End of variables declaration//GEN-END:variables
 }
