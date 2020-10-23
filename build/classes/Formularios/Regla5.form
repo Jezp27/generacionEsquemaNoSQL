@@ -104,7 +104,7 @@
                       <Component id="volver" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Component id="q1Result" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>

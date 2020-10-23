@@ -369,7 +369,7 @@ public class Regla1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
-        MenuPrincipal menu = new MenuPrincipal();
+        MenuPrincipalP1 menu = new MenuPrincipalP1();
         menu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_volverActionPerformed

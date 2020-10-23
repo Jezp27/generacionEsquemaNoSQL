@@ -211,7 +211,7 @@ public class Regla5 extends javax.swing.JFrame {
                         .addGap(92, 92, 92)
                         .addComponent(volver))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
+                        .addGap(31, 31, 31)
                         .addComponent(q1Result)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -381,7 +381,7 @@ public class Regla5 extends javax.swing.JFrame {
         return qPrima;
     }
 
-    private String obtenerTPrima(String[] tableN, String tableName, String[] conjuntoS1) {
+    private String obtenerTPrima(String[] tableN, String tableName, String parentTable, String[] conjuntoS1) {
         String[] conjuntoS3 = s3Queries.getText().split("(\n|\r)");
         ArrayList<String> conjuntoTnS3 = new ArrayList<>();
         ArrayList<String> conjuntoTN = new ArrayList<>();
@@ -403,7 +403,7 @@ public class Regla5 extends javax.swing.JFrame {
         String qPrima = "";
 
         if (!tPrimaN.isEmpty() && !tableName.isEmpty()) {
-            qPrima = tableName + "_of_" + this.nombreTabla1.getText() + ":{";
+            qPrima = tableName + "_of_" + parentTable + ":{";
 
             for (int i = 0; i < tPrimaN.size(); i++) {
                 qPrima = qPrima + tPrimaN.get(i) + ",";
@@ -424,8 +424,8 @@ public class Regla5 extends javax.swing.JFrame {
         String[] conjuntoS1T2 = s1T2Queries.getText().split("(\n|\r)");
         String[] conjuntoS1T3 = s1T3Queries.getText().split("(\n|\r)");
 
-        String tPrima2 = this.obtenerTPrima(T2, this.nombreTabla2.getText(), conjuntoS1T2);
-        String tPrima3 = this.obtenerTPrima(T3, this.nombreTabla3.getText(), conjuntoS1T3);
+        String tPrima2 = this.obtenerTPrima(T2, this.nombreTabla2.getText(), this.nombreTabla1.getText(), conjuntoS1T2);
+        String tPrima3 = this.obtenerTPrima(T3, this.nombreTabla3.getText(), this.nombreTabla2.getText(), conjuntoS1T3);
 
         String tDoblePrima2 = this.obtenerTDoblePrima(T2, conjuntoS1T2, 2);
         String tDoblePrima3 = this.obtenerTDoblePrima(T3, conjuntoS1T3, 3);
@@ -463,7 +463,7 @@ public class Regla5 extends javax.swing.JFrame {
     }//GEN-LAST:event_nombreTabla2ActionPerformed
 
     private void volverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverActionPerformed
-        MenuPrincipal menu = new MenuPrincipal();
+        MenuPrincipalP1 menu = new MenuPrincipalP1();
         menu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_volverActionPerformed

@@ -28,97 +28,70 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        menuPrincipalP1 = new javax.swing.JButton();
+        menuPrincipalP2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        Regla1 = new javax.swing.JButton();
-        Regla4 = new javax.swing.JButton();
-        Regla5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel1.setText("Creating Collections with Embedded Documents for Document Databases Taking into Account the Queries ");
-
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("Seleccione cual de las reglas desea aplicar:");
-
-        Regla1.setText("Regla 1");
-        Regla1.addActionListener(new java.awt.event.ActionListener() {
+        menuPrincipalP1.setText("Punto 1");
+        menuPrincipalP1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Regla1ActionPerformed(evt);
+                menuPrincipalP1ActionPerformed(evt);
             }
         });
 
-        Regla4.setText("Regla 4");
-        Regla4.addActionListener(new java.awt.event.ActionListener() {
+        menuPrincipalP2.setText("Punto 2");
+        menuPrincipalP2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Regla4ActionPerformed(evt);
+                menuPrincipalP2ActionPerformed(evt);
             }
         });
 
-        Regla5.setText("Regla 5");
-        Regla5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Regla5ActionPerformed(evt);
-            }
-        });
+        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel1.setText("Tercer Trabajo Bases II");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(109, 109, 109)
+                .addComponent(menuPrincipalP1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 220, Short.MAX_VALUE)
+                .addComponent(menuPrincipalP2)
+                .addGap(138, 138, 138))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(244, 244, 244)
                 .addComponent(jLabel1)
-                .addGap(29, 29, 29))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(Regla1)
-                .addGap(139, 139, 139)
-                .addComponent(Regla4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Regla5)
-                .addGap(105, 105, 105))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(215, 215, 215)
-                .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(46, 46, 46)
                 .addComponent(jLabel1)
-                .addGap(48, 48, 48)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Regla1)
-                    .addComponent(Regla4)
-                    .addComponent(Regla5))
-                .addGap(100, 100, 100))
+                    .addComponent(menuPrincipalP1)
+                    .addComponent(menuPrincipalP2))
+                .addGap(97, 97, 97))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Regla1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Regla1ActionPerformed
-        Regla1 vista = new Regla1();
-        vista.setVisible(true);
+    private void menuPrincipalP1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPrincipalP1ActionPerformed
+        MenuPrincipalP1 menu1 = new MenuPrincipalP1();
+        menu1.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_Regla1ActionPerformed
+    }//GEN-LAST:event_menuPrincipalP1ActionPerformed
 
-    private void Regla4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Regla4ActionPerformed
-        Regla4 vista = new Regla4();
-        vista.setVisible(true);
+    private void menuPrincipalP2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPrincipalP2ActionPerformed
+        MenuPrincipalP2 menu2 = new MenuPrincipalP2();
+        menu2.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_Regla4ActionPerformed
-
-    private void Regla5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Regla5ActionPerformed
-        Regla5 vista = new Regla5();
-        vista.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_Regla5ActionPerformed
+    }//GEN-LAST:event_menuPrincipalP2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,10 +129,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Regla1;
-    private javax.swing.JButton Regla4;
-    private javax.swing.JButton Regla5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton menuPrincipalP1;
+    private javax.swing.JButton menuPrincipalP2;
     // End of variables declaration//GEN-END:variables
 }
